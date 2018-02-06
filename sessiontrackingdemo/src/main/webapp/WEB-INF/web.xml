@@ -1,0 +1,26 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	      xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+	      http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	      version="2.5">
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+  <welcome-file>register.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>Register</servlet-name>
+  	<servlet-class>sessiontrackingdemo.Register</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<servlet-class>sessiontrackingdemo.SecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Register</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<url-pattern>/SecondServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
